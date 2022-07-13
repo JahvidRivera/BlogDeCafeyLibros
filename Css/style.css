@@ -1,0 +1,315 @@
+:root { 
+    --fuenteheadimg: 'pt sans', sans-serif;
+    --fuenteparrafos: 'open sans', sans-serif;
+
+
+    --primario: #784d3c;
+    --blanco: #ffffff; 
+    --gris: #e1e1e1; 
+    --negro: #000000;
+
+
+}
+
+html { 
+    box-sizing: border-box;
+    font-size: 62.5%; /*para que un 1 rem sean 10 px*/
+}
+*, * :before, *::after { 
+    box-sizing: inherit;
+}
+
+body { 
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2; /*darle mayor interliniado*/
+}
+
+/** globales**/
+.contenedor { 
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+a{ 
+    text-decoration: none;
+}
+
+
+
+h1, h2, h3, h4 { 
+    font-family: var(--fuenteheadimg);
+    line-height: 1.2;
+}
+
+h1 { 
+    font-size: 4rem;
+}
+h2 {
+    font-size: 7rem;
+}
+
+h3 { 
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+
+
+p { 
+    font-size: 1.8rem;
+    text-align: justify;
+}
+img { 
+    max-width: 100%;
+}
+
+/** utilidaes **/
+
+.no-margin { 
+    margin: 0;
+}
+.no-padding { 
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+/**header**/
+
+header { 
+    background-image: url(../img/banner.jpg);
+    height: 60rem; /*esto es altura*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /*para al dismunuir saber que parte de la imagen este **/
+
+}
+
+.header__texto { 
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__texto{ 
+        margin-top: 10rem;
+    }        
+}
+
+.barra { 
+    padding: 3rem;
+}
+
+@media (min-width: 768px) { 
+    .barra { 
+        display: flex;
+        justify-content: space-between; /*para aliniar horizontalmente**/
+        align-items: center;
+    }
+        
+}
+ .logo { color: var(--blanco); }
+
+ .logo__nombre {
+    font-weight: 200;}
+
+ .logo__bold {
+     font-weight: 700;}
+
+
+@media (min-width: 768px) {
+        .navegacion { 
+            display: flex;
+            gap: 2rem;
+        }
+            
+    }
+
+.navegacion__enlace { 
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+        color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenido-principal { 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+        
+}
+
+/**foto grabriel garcia marquez**/
+
+.gabrielimg { 
+    display: grid;
+    margin: auto;
+    width: 100%;
+}
+
+.entrada { 
+    border-bottom: 2px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type { 
+    border: none;
+    margin-bottom: 0;
+}
+
+.botom { 
+    display: block; /*para cuando se abra en un disposito mobil se abra tome todo el espacion disponible*/
+    font-family: var(--fuenteheadimg);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase; /*mayuscula*/
+    font-weight: 700;
+    margin-bottom: 2rem;
+    transition: font-size .3s ease;
+    border: none;
+}
+.botom:hover {
+    font-size: 2rem;
+    background-color:#2196f3; 
+    cursor: pointer;
+
+}
+@media (min-width: 768px) {
+    .botom {
+        display: inline-block;
+    }
+ 
+
+    }
+        
+.botom--primario { 
+    background-color: var(--negro);
+   
+}
+.botom--segundario { 
+    background-color: var(--primario);
+    
+}
+
+.sombras { 
+    -webkit-box-shadow: -2px 2px 24px -3px rgba(212,179,138,1);
+    -moz-box-shadow: -2px 2px 24px -3px rgba(212,179,138,1);
+    box-shadow: -2px 2px 24px -3px rgba(212,179,138,1);
+padding: 2rem;
+  margin-bottom: 2rem;
+}
+.sombras-2 { 
+    -webkit-box-shadow: -2px 2px 24px -3px rgba(212,179,138,1);
+    -moz-box-shadow: -2px 2px 24px -3px rgba(212,179,138,1);
+    box-shadow: -2px 2px 24px -3px rgba(212,179,138,1);
+    padding: 2rem;
+    
+}
+
+.cursos { 
+    list-style: none; /**quitar la biñeta**/
+    
+}
+
+.curso__informacion { 
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+    
+}
+.curso__informacion :last-of-type { 
+    border: none;
+    margin-bottom: 0;
+
+}
+.widget-curso__label { 
+    font-family: var(--fuenteheadimg);
+    font-weight: bold;
+
+
+}
+.widget-curso__informacion { 
+    font-weight: normal;
+
+}
+.widget-curso__informacion,
+.widget-curso__label { 
+    font-size: 2rem;
+}
+
+.footer { 
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin:  2rem 0;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+
+/** Curso**/
+
+.curso { 
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .curso { 
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+        
+}
+.curso :last-of-type { 
+    border: none; 
+}
+
+/**contacto**/  
+
+.contacto-bg { 
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+.formulario { 
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+
+    
+}
+.campo { 
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+
+}
+.campo__field { 
+    flex: 1;
+    border: 1px solid var(--gris);
+
+
+}
+
+.campo__field--textarea { 
+    height: 20rem;
+
+}

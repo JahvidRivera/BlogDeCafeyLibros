@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe y Libros</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="Index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">BlogDe<span class="logo__bold">CafeyLibros</span></h1>
+
+                    <nav class="navegacion"> 
+                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                        <a href="curso.html" class="navegacion__enlace">Cursos</a>
+                        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+
+                    </nav>
+                </a>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin"> BLOG CAFÉ Y LIBROS </h2>
+            <h4 class="no-margin especial"> Lee recomendaciones de los mejores </h4>
+
+        </div> 
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro blog</h3>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="img/blog1.jpg" alt="imagen alterna">
+                 </div>
+                 <div class="entrada__contenido">
+                    <h4 class="no-margin"> Historia del cafe Colombiano</h4>
+                    <p> Todo comenzó siglos atrás en África, exactamente en Etiopía, donde el café inicialmente 
+                        se consumía en infusiones o masticando sus hojas, pero fueron los árabes los responsables de 
+                        su expansión, primero por todo el mundo árabe llegando a Turquía en 1554.</p>
+                        
+                 <a href="historia.html" class="botom botom--primario" > Leer mas</a>
+                    </div>
+
+            </article>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" class="gabrielimg"src="img/garcia_marquez_gabriel.jpg" alt="imagen alterna">
+                 </div>
+                 <div class="entrada__contenido">
+                    <h4 class="no-margin">García Márquez ganó el Nobel</h4>
+                    <p>En 1982 el escritor colombiano Gabriel García Márquez recibió el Nobel de Literatura 
+                        “por sus novelas e historias cortas, en las que lo fantástico y lo real se combinan en un mundo ricamente
+                         compuesto de imaginación, lo que refleja la vida y los conflictos de un continente”</p>
+                        
+                 <a href="nobel.html" class="botom botom--primario" > Leer mas</a>
+                    </div>
+
+            </article>
+                        <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="img/blog3.jpg" alt="imagen alterna">
+                 </div>
+                 <div class="entrada__contenido">
+                    <h4 class="no-margin"> Beneficios del cafe</h4>
+                    <p> El café es uno de los productos vegetales más 
+                        ricos en compuestos antioxidantes. Estos antioxidantes 
+                        están presentes especialmente en los granos de café verde y aunque una parte se elimina con el tueste, lo cierto es que el café tostado
+                         sigue siendo una buena fuente de ellos.</p>
+                        
+                 <a href="Beneficios.html" class="botom botom--primario" > Leer mas</a>
+                    </div>
+
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img loading="lazy" src="img/Libros.png" alt="imagen alterna">
+                 </div>
+                 <div class="entrada__contenido">
+                    <h4 class="no-margin">Conozca la literatura Colombiana</h4>
+                    <p> Iniciamos con una de las obras más traducidas y 
+                        leídas en español del escritor colombiano Gabriel García Márquez quien 
+                        ganó Premio Nobel de Literatura en 1982..</p>
+                        
+                 <a href="Libros.html" class="botom botom--primario" > Leer mas</a>
+                    </div>
+
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros cursos y talleres</h3>
+
+    
+            <ul class="cursos no-padding">
+                <div class="sombras"> 
+                <li class="widget-curso">
+                    <h4 class="no-margin"> Tecnicas de extracion de cafe</h4>
+                    <p class="widget-curso__label"> precio: 
+                    <span class="widget-curso__informacion">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label"> cupo: 
+                        <span class="widget-curso__informacion">20</span>
+                        </p> 
+                    <a href="Curso.html" class="botom botom--segundario">mas informacion</a>
+                        
+
+                </li>
+            </div>
+                <div class="sombras-2"> 
+                <li class="widget-curso">
+                    <h4 class="no-margin"> 4 Recetas de cafe para principiante</h4>
+                    <p class="widget-curso__label"> precio: 
+                    <span class="widget-curso__informacion">Gratis</span>
+                    </p>
+                    <p class="widget-curso__label"> cupo: 
+                        <span class="widget-curso__informacion">30</span>
+                        </p> 
+                    <a href="Curso.html" class="botom botom--segundario">mas informacion</a>
+                        
+
+                </li>
+            </div>
+            </ul>
+        
+         </aside>
+    </div>
+<footer class="footer ">
+    <div class="contenedor">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="Index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">BlogDe<span class="logo__bold">CafeyLibros</span></h1>
+
+                    <nav class="navegacion"> 
+                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                        <a href="curso.html" class="navegacion__enlace">Cursos</a>
+                        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+
+                    </nav>
+                </a>
+            </div>
+    </div>
+</footer>
+</body> 
+</html>
